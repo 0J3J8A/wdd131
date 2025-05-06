@@ -1,0 +1,48 @@
+body{
+    display: grid;
+    height: 100vh;
+    grid-template:auto 1fr auto / auto 1fr 1fr 1fr auto;
+}
+header{
+    background: rgb(84, 83, 83);
+    padding: 1rem;
+    grid-column: 1 / 5;
+}
+header h1{
+    margin-bottom: 5rem;
+    color: white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 2rem;
+    grid-column: 1 / 5;
+    max-height: 2rem;
+}
+main{
+    background: lightgray;
+    grid-column: 1/4;
+    margin-top: -21rem;
+}
+aside{
+    background: white;
+    grid-column: 4/5;
+    margin-top: -21rem;
+}
+aside h2, main h2, header h1{
+    margin-left: 2rem;
+}
+
+footer {
+    color: white;
+    background: gray;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 5;
+  }
