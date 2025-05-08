@@ -39,6 +39,7 @@ main{
     grid-template-columns: 2fr 2fr 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+    max-width: 100%;
 }
 section{
     border: solid 0.2rem rgb(8, 61, 135);
