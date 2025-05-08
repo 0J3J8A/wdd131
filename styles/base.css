@@ -1,0 +1,121 @@
+h1,
+h2,
+nav a {
+    font-family: "Permanent Marker", cursive;
+}
+body {
+    background: rgb(255, 255, 255);
+}
+nav a:hover {
+	text-decoration: underline;
+    color:rgb(245, 204, 66);
+}
+p {
+    font-family: "Cormorant Garamond";
+}
+.header {
+    display: flex;
+    justify-content: center;
+    background: rgb(8, 61, 135);
+    padding: 1rem;
+    color: white;
+}
+.name {
+    color: rgb(245, 204, 66);
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: rgb(52, 51, 51);
+}
+.menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+section{
+    border: solid 0.2rem rgb(8, 61, 135);
+    border-radius: 1.5rem;
+}
+.card_1{
+    grid-column: 1/3
+}
+.card_1 h2, .card_2 h2{ 
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background: rgb(8, 61, 135);
+    padding: 0.5rem;
+    margin-top: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+.card_2{
+    grid-column: 3/5
+}
+.profile_information{
+    display: grid;
+}
+.profile_information p{
+    padding: 1rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column: 1/2;
+    margin-bottom: -2.5rem; 
+    font-size: 1.1rem;
+}
+
+.profile_information h2{
+    grid-column: 1/3;
+}
+
+.profile_information img{
+    grid-column: 2/3;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    width: 15rem;
+    margin-top: -5rem;
+}
+.location{
+    display: grid;
+}
+.location h3{   
+    text-align: center; ;
+}
+.location p{
+    padding: 1rem;
+    margin: 0;
+    grid-column: 2/3;
+    font-size: 1.1rem;
+}
+.location img{
+    grid-column: 1/2;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    width: 15rem;
+    margin-top: -16rem;
+}
+ul{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+footer{
+    background: rgb(8, 61, 135);
+    color: white; 
+}
+footer p{
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.p_2{
+    color: rgb(245, 204, 66);
+}
