@@ -1,0 +1,48 @@
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+
+    .navigation li {
+        padding: 0.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navigation a {
+        font-size: 1.5rem;
+    }
+
+    #h_menu::before {
+        content: "☰";
+        font-size: 2rem;
+        color: white;
+    }
+
+    #h_menu.open::before {
+        content: "✖";
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .album {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+}
