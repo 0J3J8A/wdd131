@@ -1,0 +1,122 @@
+:root {
+    --one-color: rgb(0, 8, 20);
+    --two-color: rgb(0, 29, 61);
+    --three-color: rgb(0, 53, 102);
+    --four-color: rgb(255, 195, 0);
+    --five-color: rgb(255, 214, 10);
+    --red-color: rgb(150, 30, 50);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Permanent Marker", cursive;
+    color: var(--five-color);
+}
+
+p,
+.label {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--five-color);
+}
+
+body {
+    background-color: var(--two-color);
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 0.3rem solid var(--red-color);
+}
+
+.hero {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.data_list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.data h2,
+.weather h2 {
+    font-size: 2rem;
+}
+
+.label,
+footer {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.data,
+.weather {
+    position: absolute;
+    background-color: rgba(0, 8, 20, 0.85);
+    border: 0.2rem solid var(--red-color);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 280px;
+    box-shadow: 0 0 15px var(--red-color);
+}
+
+.data {
+    top: 30%;
+    left: 2%;
+}
+
+.weather {
+    top: 90%;
+    right: 2%;
+}
+
+.data .label,
+.weather .label,
+.data h2,
+.weather h2 {
+    color: var(--five-color);
+    
+}
+
+.data li,
+.weather li {
+    color: var(--five-color);
+    padding: 0.3rem;
+}
+
+.data h2,
+.weather h2 {
+    text-align: center;
+    margin-bottom: -1.5rem;
+    margin-top: -0.2rem;
+}
+
+.weather h2::after {
+    content: "⛅";
+    margin-left: 10px;
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-top: 0.3rem solid var(--red-color);
+}
+
+footer p {
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOMBIA | Juan Jose Aguirre Marin | WDD131</title>
+    <meta name="author" content="Juan Jose Aguirre Marin">
+    <meta name="description" content="A brief information about Colombia, with responsible images and use of functions js">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Cormorant+Garamond:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>COLOMBIA</h1>
+    </header>
+    <picture class="hero">
+        <source srcset="images/bogota-large.webp" media="(min-width: 1200px)">
+        <!-- USE the () to work the media statement -->
+        <source srcset="images/bogota-medium.webp" media="(min-width: 800px)">
+        <img src="images/bogota-small.webp" alt="Bogota_img" width="500" height="250">
+    </picture>
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <ul class="data_list">
+                <li><span class="label">Area:</span> 1,141,748 km²</li>
+                <li><span class="label">Population:</span> 52 million (approx)</li>
+                <li><span class="label">Capital:</span> Bogotá</li>
+                <li><span class="label">Languages:</span> Spanish (official)</li>
+                <li><span class="label">Currency:</span> Colombian peso (COP)</li>
+                <li><span class="label">Time Zone:</span> UTC-5 (COT)</li>
+                <li><span class="label">Calling Code:</span> +57</li>
+                <li><span class="label">Internet TLD:</span> .co</li>
+            </ul>
+
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <ul class="data_list">
+                <li><span class="label">Temperature:</span> <span id="temperature"></span>°C</li>
+                <li><span class="label">Conditions:</span> Sunny</li>
+                <li><span class="label">Wind:</span> <span id="windSpeed"></span> km/h</li>
+                <li><span class="label">Wind Chill:</span> <span id="windChill">N/A</span></li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>- Juan Jose Aguirre Marin - Colombia</p>
+        <p class="p_2">Last Modification: <span id="lastmodification"></span></p>
+    </footer>
+</body>
+
+</html>

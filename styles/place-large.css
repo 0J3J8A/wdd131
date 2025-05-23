@@ -1,0 +1,53 @@
+@media (max-width: 767px) {
+
+    :root {
+        --one-color: rgb(0, 8, 20);
+        --two-color: rgb(0, 29, 61);
+        --three-color: rgb(0, 53, 102);
+        --four-color: rgb(255, 195, 0);
+        --five-color: rgb(255, 214, 10);
+        --red-color: rgb(150, 30, 50);
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Hero image full width */
+    .hero img {
+        width: 100%;
+    }
+
+    /* Secciones en flujo normal */
+    .data,
+    .weather {
+        position: static;
+        width: auto;
+        max-width: 100%;
+        margin: 1rem;
+        background-color: var(--one-color);
+        border: 2px solid var(--red-color);
+    }
+
+    /* SVG weather icon */
+    .weather h2::after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        background-image: url('../images/weather_icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+
+    .data li,
+    .weather li {
+        text-align: center;
+    }
+}
