@@ -27,9 +27,10 @@ td {
     border: 0.2rem solid rgb(0, 0, 0);
 }
 
-tr:nth-last-child(3){
+tr:nth-last-child(2) {
     background-color: #02a5c92d;
 }
+
 caption {
     caption-side: bottom;
     font-size: smaller;
