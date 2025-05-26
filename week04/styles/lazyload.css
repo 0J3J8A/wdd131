@@ -1,0 +1,15 @@
+img{
+    display: block;
+    box-shadow: 8px 8px 10px rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
