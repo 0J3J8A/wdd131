@@ -1,0 +1,73 @@
+h1,
+nav a {
+    font-family: "Permanent Marker", cursive;
+}
+body {
+    background: rgb(255, 255, 255);
+}
+header{
+    background: rgb(8, 61, 135);
+    color:rgb(245, 204, 66);
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+nav a, nav ul{
+    color:white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+nav a:hover {
+	text-decoration: overline;
+    color:rgb(245, 204, 66);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+}
+main{
+    max-width: 1300px; /* 1200 ---> (50-300-50-50-300-50-50-300-50) */
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.album{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.about{
+    text-align: center;
+    color: rgb(245, 204, 66);;
+}
+.about_figure{
+    background: rgb(52, 51, 51);
+}
+main h2{
+    text-align: center;
+    border-bottom: 0.2rem solid rgb(8, 61, 135);
+    color:rgb(8, 61, 135) ;
+}
+
+main img{
+    max-width: 360px;
+    height: 260px;
+}
+footer{
+    background:rgb(8, 61, 135);
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0;
+    font-size: 1.5rem;
+    color:white;
+}
+.p_2{
+    color:rgb(245, 204, 66);
+}
