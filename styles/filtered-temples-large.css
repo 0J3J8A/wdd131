@@ -23,13 +23,14 @@
     }
 
     #h_menu::before {
-        content: "☰";
-        font-size: 2rem;
+        content: "";
         color: white;
-    }
-
-    #h_menu.open::before {
-        content: "✖";
+        display: inline-block;
+        background-image: url("/images/temple_image.png");
+        background-size:contain;
+        width: 100px;
+        height: 80px;
+        background-repeat: no-repeat;
     }
 
     .navigation.open {
@@ -43,6 +44,25 @@
 
     main img {
         max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .res-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .res-grid {
+        grid-template-columns: 1fr; /* 1 column*/
+        padding: 1rem;
+        gap: 1rem;
+        row-gap: 3rem;
+    }
+    
+    .res-grid img {
         height: auto;
     }
 }

@@ -2,26 +2,31 @@ h1,
 nav a {
     font-family: "Permanent Marker", cursive;
 }
+
 body {
     background: rgb(255, 255, 255);
 }
-header{
+
+header {
     background: rgb(8, 61, 135);
-    color:rgb(245, 204, 66);
+    color: rgb(245, 204, 66);
     display: flex;
     padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
 }
-nav a, nav ul{
-    color:white;
+
+nav a,
+nav ul {
+    color: white;
     text-decoration: none;
     font-size: 2rem;
 }
+
 nav a:hover {
-	text-decoration: overline;
-    color:rgb(245, 204, 66);
+    text-decoration: overline;
+    color: rgb(245, 204, 66);
 }
 
 .navigation {
@@ -30,44 +35,76 @@ nav a:hover {
     gap: 1.5rem;
     list-style: none;
 }
-main{
+
+main {
     max-width: 1300px; /* 1200 ---> (50-300-50-50-300-50-50-300-50) */
     margin: auto;
     margin-bottom: 2rem;
 }
-.album{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-}
 
-.about{
-    text-align: center;
-    color: rgb(245, 204, 66);;
-}
-.about_figure{
-    background: rgb(52, 51, 51);
-}
-main h2{
+main h2 {
     text-align: center;
     border-bottom: 0.2rem solid rgb(8, 61, 135);
-    color:rgb(8, 61, 135) ;
+    color: rgb(8, 61, 135);
+}
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns*/
+    gap: 1.5rem;
+    row-gap: 3rem;
+    max-width: 1300px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
 }
 
-main img{
-    max-width: 360px;
-    height: 260px;
+.res-grid section {
+    background: white;
+    border: 1px solid rgba(8, 61, 135, 0.588);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.671);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-footer{
-    background:rgb(8, 61, 135);
+
+.res-grid h3 {
+    color: rgb(8, 61, 135);
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
     text-align: center;
 }
-footer p{
+
+.res-grid p {
+    color: rgb(0, 0, 0);
+    font-family: "Cormorant Garamond";
+    font-size: 1.1rem;
+    margin: 0.3rem;
+    text-align: center;
+}
+
+.res-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-top: auto;
+    border-radius: 3px;
+}
+
+footer {
+    background: rgb(8, 61, 135);
+    text-align: center;
+}
+
+footer p {
     text-align: center;
     padding: 0.3rem;
     margin: 0;
     font-size: 1.5rem;
-    color:white;
+    color: white;
 }
-.p_2{
-    color:rgb(245, 204, 66);
+
+.p_2 {
+    color: rgb(245, 204, 66);
 }

@@ -98,6 +98,95 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/nauvoo-illinois/800x500/nauvoo-temple-756499-wallpaper.jpg"
   },
+  {
+    templeName: "McAllen Texas Temple",
+    location: "MacAllen, Texas United States",
+    dedicated: "2023, October, 8",
+    area: 27897,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/51edc593152e11ee90afeeeeac1ef99dfe5ba797/full/640%2C/0/default"
+  },
+  {
+    templeName: "Bogotá Colombia Temple",
+    location: "Bogotá, Colombia",
+    dedicated: "1999, April, 25",
+    area: 53500,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/89b209718a7ed41649a497893e240972b7cfd036/full/640%2C/0/default"
+  },
 
   // Add more temple objects here...
 ];
+
+createTempleCard(temples);
+
+//HOMELINK
+const HomeLink = document.querySelector("#Home");
+HomeLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  createTempleCard(temples);
+   });
+
+
+//OLDLINK
+const OldLink = document.querySelector("#Old");
+OldLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  createTempleCard(temples.filter(temple => {
+    const year = parseInt(temple.dedicated.split(",")[0].trim());
+    return year < 1900; 
+  }));
+});
+
+//NEWLINK
+const NewLink = document.querySelector("#New");
+NewLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  createTempleCard(temples.filter(temple => {
+    const year = parseInt(temple.dedicated.split(",")[0].trim());
+    return year > 2000; 
+  }));
+});
+
+//LARGELINK
+const LargeLink = document.querySelector("#Large");
+LargeLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  createTempleCard(temples.filter(temple=> temple.area > 89999))
+});
+
+//SMALLLINK
+const SmallLink = document.querySelector("#Small");
+SmallLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  createTempleCard(temples.filter(temple=> temple.area < 10001))
+});
+
+
+function createTempleCard(filteredTemples){
+  document.querySelector(".res-grid").innerHTML = "";
+  filteredTemples.forEach(temple => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area}`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".res-grid").appendChild(card);
+  });
+}
