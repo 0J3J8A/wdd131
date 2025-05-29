@@ -23,14 +23,13 @@
     }
 
     #h_menu::before {
-        content: "";
+        content: "☰";
+        font-size: 2rem;
         color: white;
-        display: inline-block;
-        background-image: url("/images/temple_image.png");
-        background-size:contain;
-        width: 100px;
-        height: 80px;
-        background-repeat: no-repeat;
+    }
+
+    #h_menu.open::before {
+        content: "✖";
     }
 
     .navigation.open {
