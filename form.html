@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT REVIEW | FORM</title>
+    <metan name="description" content="Form using BEST PRACTICES in html/styling and use JS to localstorage">
+        <meta name="author" content="Juan Jose Aguirre Marin">
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <form method="get" action="review.html">
+            <div id="PRODUCTNAME">
+                <label> Product Name
+                    <select id="productSelect" name="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </label>
+            </div>
+            <div id="O_RATE">
+                <legend>Overall Rating</legend>
+                <label><input id="1_star" type="radio" name="rating" value="one" required>☆</label>
+                <label><input id="2_star" type="radio" name="rating" value="two">☆☆</label>
+                <label><input id="3_star" type="radio" name="rating" value="three">☆☆☆</label>
+                <label><input id="4_star" type="radio" name="rating" value="four">☆☆☆☆</label>
+                <label><input id="5_star" type="radio" name="rating" value="five">☆☆☆☆☆</label>
+            </div>
+            <div id="DATE_I">
+                <legend>Date Of Installation</legend>
+                <label> <input id="date" name="dateofInstallation" type="date" required></label>
+            </div>
+            <div id="features">
+                <legend>Which features did you find useful in the product?<br>(Check all that apply)</legend>
+
+                <label>
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    Durability
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+                    Ease of Use
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    Performance
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    Design
+                </label>
+            </div>
+            <div id="WR">
+                <label>Written Review (Optional)</label><br>
+                <textarea id="writtenReview" name="writtenReview" rows="5" cols="40"></textarea>
+            </div>
+            <div id="userName">
+                <label>User Name (Optional)</label><br>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <input type="submit" value="POST REVIEW">
+        </form>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>- Juan Jose Aguirre Marin - Colombia</p>
+        <p class="p_2">Last Modification: <span id="lastmodification"></span></p>
+    </footer>
+</body>
+
+</html>

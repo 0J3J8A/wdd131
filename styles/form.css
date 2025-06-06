@@ -1,0 +1,111 @@
+/* Form container */
+form {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #e6f0ff; /* Light blue */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #003366; /* Dark blue text */
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ffcc00; /* Bright yellow border */
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: #003366;
+  background: #fffbea; /* Pale yellow */
+}
+
+/* Focus style */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #004aad; /* Strong blue */
+  outline: none;
+  background: #e0ebff;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  padding: 15px 20px 20px;
+  margin-bottom: 25px;
+  background: #f9faff;
+}
+
+/* Legends */
+legend {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #004aad;
+  padding: 0 8px;
+}
+
+/* Checkboxes & radios */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #004aad; /* Blue accent */
+}
+
+/* Align checkbox/radio inputs */
+label > input[type="checkbox"],
+label > input[type="radio"] {
+  vertical-align: middle;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background: #ffcc00; /* Bright yellow */
+  color: #003366; /* Dark blue */
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Submit hover */
+input[type="submit"]:hover {
+  background: #e6b800; /* Darker yellow */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  form {
+    padding: 15px 10px;
+    margin: 10px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
