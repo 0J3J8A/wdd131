@@ -1,111 +1,150 @@
-/* Form container */
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 0.2rem solid #004aad;
+}
+header h1 {
+    font-size: 2.5rem;
+    color: #004aad;
+    margin: 0;
+    padding: 0.5rem 0;
+}
 form {
-  max-width: 700px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #e6f0ff; /* Light blue */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #003366; /* Dark blue text */
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e6f0ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI';
+    color: #003366;
 }
 
-/* Labels */
 label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-/* Inputs, selects, textarea */
+
 input[type="text"],
 input[type="email"],
 input[type="date"],
 select,
 textarea {
-  width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 20px;
-  border: 2px solid #ffcc00; /* Bright yellow border */
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  box-sizing: border-box;
-  font-family: inherit;
-  color: #003366;
-  background: #fffbea; /* Pale yellow */
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ffcc00;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: #003366;
+    background: #fffbea;
+    border-radius: 12px 6px;
 }
 
-/* Focus style */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="date"]:focus,
-select:focus,
-textarea:focus {
-  border-color: #004aad; /* Strong blue */
-  outline: none;
-  background: #e0ebff;
-}
 
-/* Fieldsets */
 fieldset {
-  border: 2px solid #ffcc00;
-  border-radius: 8px;
-  padding: 15px 20px 20px;
-  margin-bottom: 25px;
-  background: #f9faff;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    padding: 15px 20px 20px;
+    margin-bottom: 25px;
+    background: #f9faff;
 }
 
-/* Legends */
-legend {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #004aad;
-  padding: 0 8px;
+p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #004aad;
+    padding: 0 8px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Checkboxes & radios */
 input[type="checkbox"],
 input[type="radio"] {
-  margin-right: 8px;
-  accent-color: #004aad; /* Blue accent */
+    margin-right: 8px;
+    accent-color: #004aad;
+    width: 20px;
 }
 
-/* Align checkbox/radio inputs */
-label > input[type="checkbox"],
-label > input[type="radio"] {
-  vertical-align: middle;
+
+label>input[type="checkbox"],
+label>input[type="radio"] {
+    vertical-align: middle;
 }
 
 /* Submit button */
 input[type="submit"] {
-  background: #ffcc00; /* Bright yellow */
-  color: #003366; /* Dark blue */
-  font-weight: 700;
-  font-size: 1.1rem;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  margin-top: 10px;
+    background: #ffcc00;
+    color: #003366;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.5rem 0 0 0;
+    width: 100%;
 }
 
 /* Submit hover */
 input[type="submit"]:hover {
-  background: #e6b800; /* Darker yellow */
+    background: #e6b800;
+    /* Darker yellow */
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  form {
-    padding: 15px 10px;
-    margin: 10px;
-  }
+#WR,
+#PRODUCTNAME {
+    margin-bottom: -1.5rem;
+}
 
-  input[type="submit"] {
-    width: 100%;
-  }
+footer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-top: 0.2rem solid #004aad;
+}
+
+footer p {
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0;
+}
+
+#features {
+    margin-top: -1rem;
+}
+
+#features label {
+    display: block;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 21px;
+}
+
+#O_RATE {
+    display: block;
+}
+
+#O_RATE label {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 0;
+}
+
+/* MOBILE*/
+@media (max-width: 480px) {
+    form {
+        padding: 15px 10px;
+        margin: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
 }
