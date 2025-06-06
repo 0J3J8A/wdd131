@@ -69,7 +69,10 @@ input[type="checkbox"],
 input[type="radio"] {
     margin-right: 8px;
     accent-color: #004aad;
-    width: 20px;
+    width: 15px;
+    height: 15px;
+    transform: scale(1.2);
+    transform-origin: left;
 }
 
 
@@ -137,14 +140,24 @@ footer p {
     margin-bottom: 0;
 }
 
-/* MOBILE*/
+/*MOBILE*/
 @media (max-width: 480px) {
     form {
         padding: 15px 10px;
         margin: 10px;
     }
-
+    
     input[type="submit"] {
         width: 100%;
+    }
+    
+    #O_RATE label {
+        display: block;
+        margin-bottom: 6px;
+    }
+    
+    input[type="radio"] {
+        margin-right: 6px;
+        transform: scale(1.1);
     }
 }
