@@ -459,7 +459,7 @@ footer {
 
   /* CONTENEDOR PRINCIPAL CON ALTURA AJUSTADA */
   .consoles-wrapper {
-    min-height: 580px;
+    min-height: 630px;
     /* Altura reducida */
     padding-bottom: 1rem;
     /* Padding inferior reducido */
@@ -467,7 +467,7 @@ footer {
 
   /* IMÁGENES */
   .consoles-img {
-    height: 230px;
+    height: 260px;
     /* Altura reducida */
     margin-bottom: 2rem;
   }
@@ -483,17 +483,6 @@ footer {
     height: 220px;
     object-fit: cover;
     border-radius: 10px;
-  }
-
-  /* GRID DE CONSOLAS */
-  .consoles-grid {
-    top: 70px;
-    /* Posición ajustada (50px título + 230px img1 + 30px espacio) */
-    left: 1rem;
-    right: 1rem;
-    gap: 1rem;
-    height: auto;
-    /* Altura flexible */
   }
 
   /* TARJETAS DE INFORMACIÓN */
@@ -526,4 +515,11 @@ footer {
   .consoles-section:hover .consoles-grid {
     opacity: 1;
   }
+
+  /* Cambiar a vista de lista en móvil */
+  .consoles-grid {
+    grid-template-columns: 1fr;
+    /* Solo una columna */
+  }
+
 }
