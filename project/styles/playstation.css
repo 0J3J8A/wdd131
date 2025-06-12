@@ -206,7 +206,6 @@ main h1 {
 
 .consoles-section:hover .consoles-grid {
   opacity: 1;
-  pointer-events: auto;
 }
 
 
@@ -271,7 +270,6 @@ main h1 {
   justify-content: center;
   gap: 0.7rem;
   opacity: 0;
-  pointer-events: none;
   transition: opacity 0.5s ease;
 }
 
@@ -286,7 +284,6 @@ main h1 {
 
 .games-section:hover .games-list {
   opacity: 1;
-  pointer-events: auto;
 }
 
 /* Footer */
