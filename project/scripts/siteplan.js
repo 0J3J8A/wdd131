@@ -15,3 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
     menu.classList.toggle('menu-open');
   });
 });
+
+//PUT A COMMENT TO CHARGE AGAIN THE JS
