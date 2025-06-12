@@ -373,7 +373,7 @@ footer {
   display: none;
 }
 
-/* Media query MOBILES (760px o menos) */
+/* Media query MOBILES (760px) */
 @media screen and (max-width: 760px) {
   header {
     flex-wrap: wrap;
@@ -457,18 +457,13 @@ footer {
     padding: 1.5rem;
   }
 
-  /* CONTENEDOR PRINCIPAL CON ALTURA AJUSTADA */
   .consoles-wrapper {
     min-height: 580px;
-    /* Altura reducida */
     padding-bottom: 1rem;
-    /* Padding inferior reducido */
   }
 
-  /* IMÁGENES */
   .consoles-img {
-    height: 230px;
-    /* Altura reducida */
+    height: 330px;
     margin-bottom: 2rem;
   }
 
@@ -476,40 +471,25 @@ footer {
     height: 250px;
   }
 
-  /* IMAGEN ADICIONAL PARA MOBILE */
+  /* EXTRA IMAGE MOBILE */
   .mobile-extra-img {
     display: block;
     width: 100%;
-    height: 220px;
+    height: 330px;
     object-fit: cover;
     border-radius: 10px;
   }
 
-  /* GRID DE CONSOLAS */
-  /* GRID DE CONSOLAS */
-  .consoles-grid {
-    top: 70px;
-    left: 1rem;
-    right: 1rem;
-    gap: 1rem;
-    height: auto;
-    grid-template-columns: 1fr;
-    /* Cambiado de 1fr 1fr a 1fr para vista en lista */
-  }
-
-
-  /* TARJETAS DE INFORMACIÓN */
+  /*CARD INFORMATION */
   .PLAYSTATION_5_SLIM_DISC,
   .PLAYSTATION_5_PRO {
     height: 100%;
     min-height: 160px;
-    /* Altura reducida */
     font-size: 0.8rem;
     padding: 0.6rem;
-    /* Padding reducido */
   }
 
-  /* LISTA DE JUEGOS */
+  /*GAME LIST */
   .games-list {
     left: 0.5rem;
     right: 0.5rem;
@@ -519,7 +499,7 @@ footer {
     gap: 0.5rem;
   }
 
-  /* EFECTOS HOVER */
+  /* HOVER */
   .consoles-section:hover .consoles-img,
   .consoles-section:hover .mobile-extra-img {
     opacity: 0;
@@ -529,7 +509,7 @@ footer {
     opacity: 1;
   }
 
-  /* Cambiar a vista de lista en móvil */
+  /* ONLY ONE COLUMN IN MOBILE*/
   .consoles-grid {
     grid-template-columns: 1fr;
     /* Solo una columna */
