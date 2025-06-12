@@ -42,7 +42,7 @@ header {
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: var(--color-BLACK);
-  border-bottom: 2px solid var(--color-purple);
+  border-bottom: 2px solid var(--color-switch);
   margin-bottom: 2rem;
 }
 
@@ -52,7 +52,7 @@ header h1 {
   font-weight: 700;
   font-size: 2.5rem;
   margin: 0;
-  color: var(--color-purple);
+  color: var(--color-switch);
 }
 
 #MAIN_MENU {
@@ -141,7 +141,7 @@ main h1 {
   flex-direction: column;
   align-items: center;
   position: relative;
-  box-shadow: var(--color-switch-dark) 0px 0px 50px;
+  box-shadow: var(--color-switch-dark) 0px 0px 80px;
 }
 
 .consoles-wrapper h2 {
@@ -298,11 +298,11 @@ footer p {
 }
 
 footer {
-  border-top: 2px solid var(--color-purple);
+  border-top: 2px solid var(--color-switch);
 }
 
 .p_2 {
-  color: var(--color-purple);
+  color: var(--color-switch);
 }
 
 /*CARD CONTAINER*/
@@ -368,7 +368,7 @@ footer {
   z-index: 1;
 }
 
-
+/*HIDE THE IMG IN THE LAPTOP VIEW*/
 .mobile-extra-img {
   display: none;
 }
