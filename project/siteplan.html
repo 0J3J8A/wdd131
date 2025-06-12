@@ -156,6 +156,26 @@
       </div>
     </div>
   </main>
+  <!-- FORM -->
+  <section class="newsletter-form">
+    <h2>Stay Updated</h2>
+    <form id="gamingNewsletter">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group checkbox">
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Receive gaming updates</label>
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
 
   <footer>
     <p>©<span id="currentyear"></span>- Juan Jose Aguirre Marin - Colombia</p>
